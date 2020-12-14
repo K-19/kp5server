@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="776.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kursach.MainController">
+   <children>
+      <Label layoutX="654.0" layoutY="16.0" text="Сервер">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="stopButton" layoutX="822.0" layoutY="21.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="111.0" style="-fx-background-color: red;" text="СТОП">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="764.0" layoutY="128.0" text="Порт">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="682.0" layoutY="217.0" prefHeight="31.0" prefWidth="231.0" text="Клиентов подключено" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="711.0" layoutY="693.0" text="Сервер работает">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="310.0" text="База данных">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="alreadyField" alignment="CENTER" editable="false" layoutX="632.0" layoutY="723.0" prefHeight="39.0" prefWidth="314.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="portField" alignment="CENTER" editable="false" layoutX="632.0" layoutY="158.0" prefHeight="39.0" prefWidth="314.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="clientsField" alignment="CENTER" editable="false" layoutX="632.0" layoutY="248.0" prefHeight="39.0" prefWidth="314.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dbField" alignment="CENTER" editable="false" layoutX="632.0" layoutY="341.0" prefHeight="39.0" prefWidth="314.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="logArea" editable="false" layoutX="23.0" layoutY="16.0" prefHeight="744.0" prefWidth="587.0" wrapText="true" />
+   </children>
+</AnchorPane>
